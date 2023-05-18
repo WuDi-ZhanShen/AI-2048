@@ -10,7 +10,7 @@ Other Features:
 2.Auto Select Day/Night UI;  
 3.Various Custom Settings;  
 4.Cheat(Remove All 2 Tiles);  
-5.Infinite Redos;  
+5.Infinite Redos For Player;  
 
 # Thanks to:
 https://github.com/tpcstld/2048
