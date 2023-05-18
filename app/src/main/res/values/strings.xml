@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_normal_title">\nGeneral Settings\n</string>
+    <string name="normal_num_x">Grid X Width</string>
+    <string name="normal_num_y">Grid Y Height</string>
+    <string name="normal_num_start">Tiles Generated At Start</string>
+    <string name="normal_num_add">Tiles Generated Per Move</string>
+    <string name="normal_2_poss">Probability of Gen 2(%)</string>
+    <string name="set_4x4ai_title">\n4x4 Grid AI Settings\n</string>
+    <string name="ai_think_least_time">Min Thinking Interval(ms)</string>
+    <string name="ai_think_max_depth">Max Thinking Depth(can be 0)</string>
+    <string name="set_ai_title">\nnon-4x4 Grid AI Settings\n</string>
+    <string name="ai_max_weight">AI MaxWeight</string>
+    <string name="ai_smooth_weight">AI SmoothWeight</string>
+    <string name="ai_mono_weight">AI MonoWeight</string>
+    <string name="ai_empty_weight">AI EmptyWeight</string>
+    <string name="ai_consider_four">AI Consider Generating 4</string>
+    <string name="set_back">Back</string>
+    <string name="set_ok">Save</string>
+    <string name="set_message">\nThe default values of each setting can be seen when no numbers are entered.\n\nOn the 4x4 grid, the game uses an experimental new AI algorithm. There are only two adjustable settings for the new AI: Minimum Thinking Interval and Maximum Thinking Depth.\nOn other grid sizes (such as 3x3 or 5x5), the game still uses the old version of the AI. You can adjust the five settings for the old AI.\n\nThe detailed explanations of each setting are as follows:\n\n
+1.Min Thinking Interval: Sets the minimum time for each thinking process of the 4x4 AI.\n\n
+2.Max Thinking Depth: Can be understood as setting the maximum time for each thinking process of the 4x4 AI (the higher the thinking depth, the longer the time required). If set to 0, the AI will choose the thinking depth based on the current situation of the game. This setting directly determines the strength and speed of the 4x4 AI. It is recommended to set it to 0 to get the maximum strength of the AI, or to set it to 4-8 to get a stable speed.\n\n
+3.MaxWeight: Whether the AI tends to generate a larger number. For example, sometimes two 2048s can be combined to form a 4096, but if this weight is lowered, the AI will choose not to combine them into a 4096, but to do what it thinks is more important (such as trying to increase the number of empty cells and extend the survival time).\n\n
+4.SmoothWeight: Smoothness refers to the difference between the values of two adjacent blocks. If 1024 is next to 2, then their smoothness coefficient is very large (9 times the difference, so it takes 9 combinations to become the same); if 32 is next to 32, then their smoothness coefficient is zero. Obviously, the smoother it is, the easier it is for adjacent blocks to merge into a larger number. Increasing this coefficient will cause the AI to prefer to put similar numbers together.\n\n
+5.MonoWeight: If a row is monotonically increasing, such as 32 64 128 256, it is very likely to produce a larger number. Conversely, if it is very disorderly and non-monotonic, it is impossible to combine larger numbers. Increasing this weight will make the AI merge rows of monotonic sequences.\n\n
+6.EmptyWeight: The more empty cells there are, the longer the survival time. By increasing this weight, the AI will try to ensure the number of empty cells.\n\n
+7.AI consider generating 4: By default, in the 2048 game, there is a high probability (90%) of generating a new number 2 after each move, and a low probability (10%) of generating a new number 4. If the AI does not consider generating 4, its running speed will double.\n\n\n\n</string>
+    <string name="press_anywhere_to_stop">Touch Anywhere To Stop AI.</string>
+    <string name="stopped">AI Stopped.</string>
+    <string name="re_input">Please Input Again.</string>
+    <string name="re_input_ai_weight">Please Input AI Weights Again.</string>
+    <string name="setting_change_effect">AI settings take effect immediately.</string>
+    <string name="max_score">Max Score</string>
+    <string name="current_score">Score</string>
+    <string name="change_sound">Successfully %s Sound Effect. Please Restart The Game.</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

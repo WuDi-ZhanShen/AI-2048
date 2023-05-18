@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_normal_title">\n常规游戏设置\n</string>
+    <string name="normal_num_x">横向方块数</string>
+    <string name="normal_num_y">纵向方块数</string>
+    <string name="normal_num_start">初始数字数量</string>
+    <string name="normal_num_add">生成数字数量</string>
+    <string name="normal_2_poss">生成2的概率(%)</string>
+    <string name="set_4x4ai_title">\nAI设置(4x4网格专属)\n</string>
+    <string name="ai_think_least_time">思考最短间隔(毫秒)</string>
+    <string name="ai_think_max_depth">思考最深层数(可填0)</string>
+    <string name="set_ai_title">\nAI设置(非4x4网格专属)\n</string>
+    <string name="ai_max_weight">AI最大数字权重</string>
+    <string name="ai_smooth_weight">AI平滑系数权重</string>
+    <string name="ai_mono_weight">AI单调系数权重</string>
+    <string name="ai_empty_weight">AI空格数量权重</string>
+    <string name="ai_consider_four">AI是否考虑生成4的情况</string>
+    <string name="set_back">返回</string>
+    <string name="set_ok">保存</string>
+    <string name="set_message">\n设置项的默认值可以在没有填入任何数字时看到。\n\n在4x4的网格上，游戏会使用实验性的全新AI算法。新AI可调节的设置项目前只有两个：思考最短间隔、思考最深层数。\n在其他大小(如3x3，5x5)的网格上，游戏依然使用旧版本的AI。您可以调节旧AI的五个设置项。\n\n各个设置项的详细解释：\n\n1.思考最短间隔：设定4x4 AI每次思考的最少短用时。\n\n2.思考最深层数：可以理解为设定4x4 AI每次思考的最长用时(思考层数越高，用时也越长)。如果填0，AI就会根据当前游戏的形势自主选择每次思考的层数。\n 此设置项直接决定4x4 AI的强度和速度，推荐填0以获得最大强度的AI；推荐填4~8以获得速度稳定的AI。\n\n3.最大数字权重：AI是否倾向于尽力生成一个更大的数字。比如有的时候可以用两个2048合成4096，但如果这个权重调低了，AI就会选择先不合成4096，而是去做他认为更应该做的事(比如想办法让空格子数目增多，从而延长生存时间)。\n\n4.平滑系数权重：平滑是指两个相邻方块的值之间的差别。如果1024在2的旁边，那么他俩的平滑系数就很大(相隔2的9次方，所以需要9次合成才能相同)；如果32在32的旁边，那么他俩平滑系数就是零。很明显，越平滑，相邻方块就越容易合并成更大的数字。调大这个系数，AI会倾向于把相近的数字放在一起。\n\n5.单调系数权重：如果某一行是单调递增的，如32 64 128 256，这一行极有可能合成出更大数字。反之如果是非常乱序不单调的，则没有可能合成更大数字。调大这个权重就会看到AI在合成一行又一行的单调数列。\n\n6.空格系数权重：空格的数目多，意味着生存时间变长。这个权重调大后，AI就会尽力保障空格子的数量。\n\n7.AI是否考虑生成4的情况：默认情况下，2048规则是每次移动后有很大概率(90%)新生成一个数字2，很小概率(10%)新生成一个数字4。如果让AI不考虑生成4的情况，那么AI运行速度将加快一倍。\n\n\n\n\n</string>
+    <string name="press_anywhere_to_stop">点击任意位置停止AI</string>
+    <string name="stopped">已停止AI</string>
+    <string name="re_input">请重新输入</string>
+    <string name="re_input_ai_weight">请重新输入AI各项权重值</string>
+    <string name="setting_change_effect">AI相关的设置将立即生效\n游戏相关的设置重启后生效</string>
+    <string name="max_score">最高分</string>
+    <string name="current_score">分数</string>
+    <string name="change_sound">成功%s音效，重启游戏生效</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+</resources>

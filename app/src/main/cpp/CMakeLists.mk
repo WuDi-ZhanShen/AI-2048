@@ -1,0 +1,34 @@
+LOCAL_PATH := $(call my-dir)
+MKDIR_P := $(shell mkdir -p $(LOCAL_PATH)/bin)
+
+#include $(CLEAR_VARS)
+#
+#LOCAL_MODULE := 2048
+#LOCAL_SRC_FILES := Main.cpp
+#LOCAL_CPPFLAGS :=
+#LOCAL_CFLAGS := -g -O2
+#LOCAL_LDFLAGS :=
+#LOCAL_LDLIBS :=
+#
+#LOCAL_MODULE_PATH := $(LOCAL_PATH)/bin
+#LOCAL_MODULE_SUFFIX := $(EXEEXT)
+#
+#include $(BUILD_EXECUTABLE)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := 2048
+LOCAL_SRC_FILES := 2048.cpp
+LOCAL_CPPFLAGS :=
+LOCAL_CFLAGS := -g -O2 -fPIC
+LOCAL_LDFLAGS :=
+LOCAL_LDLIBS +=
+#LOCAL_LDLIBS += -llog
+
+LOCAL_MODULE_PATH := $(LOCAL_PATH)/bin
+LOCAL_MODULE_SUFFIX := .so
+
+include $(BUILD_SHARED_LIBRARY)
+
+clean:
+	rm -rf $(LOCAL_PATH)/bin/*

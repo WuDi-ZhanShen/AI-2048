@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:paddingTop="30dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+
+            <TextView
+                style="@style/t"
+                android:text="@string/set_normal_title"
+                android:textColor="@color/text" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/normal_num_x" />
+
+                <EditText
+                    android:id="@+id/e1"
+                    style="@style/s.1"
+                    android:hint="4" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s1"
+                android:max="9" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/normal_num_y" />
+
+                <EditText
+                    android:id="@+id/e2"
+                    style="@style/s.1"
+                    android:hint="4" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s2"
+                android:max="9" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/normal_num_start" />
+
+                <EditText
+                    android:id="@+id/e4"
+                    style="@style/s"
+                    android:hint="2" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s4"
+                android:max="9" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/normal_num_add" />
+
+                <EditText
+                    android:id="@+id/e3"
+                    style="@style/s"
+                    android:hint="1" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s3"
+                android:max="9" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/normal_2_poss" />
+
+                <EditText
+                    android:id="@+id/e5"
+                    style="@style/s"
+                    android:hint="90"
+                    android:maxLength="3" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s5"
+                android:max="100" />
+
+            <TextView
+                style="@style/t"
+                android:text="@string/set_4x4ai_title"
+                android:textColor="@color/text" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/ai_think_least_time" />
+
+                <EditText
+                    android:id="@+id/e6"
+                    style="@style/s.2"
+                    android:hint="100" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s6"
+                android:max="500" />
+
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/ai_think_max_depth" />
+
+                <EditText
+                    android:id="@+id/e11"
+                    style="@style/s.2"
+                    android:hint="5" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s11"
+                android:max="15" />
+
+            <TextView
+                style="@style/t"
+                android:text="@string/set_ai_title"
+                android:textColor="@color/text" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/ai_max_weight" />
+
+                <EditText
+                    android:id="@+id/e7"
+                    style="@style/s.2"
+                    android:hint="10" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s7"
+                android:max="100" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/ai_smooth_weight" />
+
+                <EditText
+                    android:id="@+id/e8"
+                    style="@style/s.2"
+                    android:hint="1" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s8"
+                android:max="100" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/ai_mono_weight" />
+
+                <EditText
+                    android:id="@+id/e9"
+                    style="@style/s.2"
+                    android:hint="40" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s9"
+                android:max="100" />
+
+            <TableRow>
+
+                <TextView
+                    style="@style/t"
+                    android:text="@string/ai_empty_weight" />
+
+                <EditText
+                    android:id="@+id/e10"
+                    style="@style/s.2"
+                    android:hint="27" />
+            </TableRow>
+
+            <SeekBar
+                android:id="@+id/s10"
+                android:max="100" />
+
+        </TableLayout>
+
+
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/ai_consider_four" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <Button
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:text="@string/set_back" />
+
+            <Button
+                android:id="@+id/save"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/set_ok" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/set_message"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>
