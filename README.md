@@ -7,7 +7,7 @@ This AI Runs Fast And Could Easily Achieve(94%) 16384 Without Any Undos !
 
 Other Features:  
 1.MinSdk 11, TargetSDK 33;  
-2.Auto Select Day/Night UI;  
+2.Auto Switch Day/Night UI;  
 3.Various Custom Settings;  
 4.Cheat(Remove All 2 Tiles);  
 5.Infinite Undos For Player;  
